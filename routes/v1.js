@@ -18,7 +18,6 @@ router.get('/', function(req, res, next) {
   res.json({status:"success", message:"Parcel Pending API", data:{"version_number":"v1.0.0"}})
 });
 
-
 router.post(    '/users',           UserController.create);                                                    // C
 router.get(     '/users',            UserController.get);        // R
 router.put(     '/users',            UserController.update);     // U
